@@ -1,0 +1,93 @@
+$enable-shadows: true;
+$enable-gradients: true;
+$grid-breakpoints: (
+        xs: 0,
+        sm: 456px,
+        md: 789px,
+        lg: 999px,
+        xl: 1234px
+);
+$bv-enable-table-stacked: false;
+
+
+// Include Bootstrap and BootstrapVue SCSS files
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+
+// General style overrides and custom classes
+$lightpurple: #b288c0;
+$middlepurple: #7e5a9b;
+$darkerpurple: #63458a;
+$vibrantpurple: #9a48d0;
+$dark: #343a40;
+
+
+
+$primary: $lightpurple;
+$secondary: $middlepurple;
+$danger: $darkerpurple;
+$tertiary: $vibrantpurple;
+
+html, #app{
+  background-color: $danger;
+  color: white;
+}
+.deckThumbnail{
+  background-color: $dark;
+  border: 3px solid $tertiary;
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.5em 0 $primary;
+}
+.deckButton:hover{
+  color: $primary;
+}
+.createAccountBtn:hover{
+  border: 3px solid $vibrantpurple;
+}
+.cardComponent{
+  background-color: $dark;
+}
+.addToDeckBtn:hover{
+  border: 3px solid $vibrantpurple;
+
+}
+.deckThumbnail:hover{
+  color: $primary;
+}
+.nav-items:hover{
+  color: $primary;
+}
+.a.nav-link:hover{
+  color: $primary;
+}
+.searchCardsCol{
+  margin: 20px;
+  height: 400px;
+  font-size: 50px;
+  background-image: url("https://c1.scryfall.com/file/scryfall-cards/art_crop/front/2/f/2f192c3e-34ce-4857-82ef-a0423823220d.jpg?1608917749");
+  background-repeat: no-repeat;
+}
+.searchCardsCol:hover{
+  border: 5px solid $dark;
+}
+.createDeckCol{
+  margin: 20px;
+  height: 400px;
+  font-size: 50px;
+  background-image: url("https://c1.scryfall.com/file/scryfall-cards/art_crop/back/3/2/32779721-b021-4bd4-95d1-4a19b78d9faa.jpg?1604195281");
+  background-repeat: no-repeat;
+}
+.createDeckCol:hover{
+  border: 5px solid $dark;
+}
+.homeMagicLink{
+  margin: 20px;
+  font-size: 50px;
+  background-image: url("https://c1.scryfall.com/file/scryfall-cards/art_crop/front/4/c/4c85d097-e87b-41ee-93c6-0e54ec41b174.jpg?1562799094");
+}
+.homeMagicLink:hover{
+  border: 5px solid $dark;
+}
+
+
+
